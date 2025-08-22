@@ -1,22 +1,22 @@
 # 🚀 Provider & Member Engagement Analytics — Executive Demo ✨🏥
 
-> 🔥 **Stars in Your Eyes?** Blast off with QMTRY.ai's no-PHI demo that turns Synthea data into actionable gold! Spot Stars gaps, prioritize outreach like a boss, and dazzle auditors with exportable queues, scorecards, and PDC magic. Execs: In 60 seconds, you'll see revenue lifts, provider MVPs, and adherence wins. Let's make healthcare heroes out of your team! 💪📈
+> 🔥 **Stars in Reach?** Blast off with QMTRY.ai's no-PHI demo that turns Synthea data into actionable gold! Spot Stars gaps, prioritize outreach like a pro, and impress auditors with exportable queues, provider scorecards, and PDC magic. Execs: In 60 seconds, see revenue lifts, provider MVPs, and adherence wins. Make healthcare heroes out of ops teams! 💪📈
 
 Powered by Synthea (100% synthetic, zero PHI drama) • Crafted by QMTRY.ai for payers and providers chasing CMS Stars glory.
 
-## 🎯 What You'll See at a Glance (Exec Cheat Sheet) 👀
+## 🎯 What to See at a Glance (Exec Cheat Sheet) 👀
 
 Buckle up for insights that pop! Here's the dazzle:
 
 - **Stars Snapshot** ⭐: CBP, HBD control, SUPD, and PDC trends across statins/RASA/diabetes. Clean rollups, sparkly charts—spot lifts in seconds!
-- **Prioritized Outreach** 📋: Member queues with "why me?" reason codes (e.g., "SUPD slip-up" or "PDC dip"). Export CSV for your CRM and watch gaps close like magic.
-- **Provider Scorecards** 🏆: Rank 'em by engagement, quality velocity, and panel adherence. Peer benchmarks to fuel those "you're crushing it!" convos.
+- **Prioritized Outreach** 📋: Member queues with "why this?" reason codes (e.g., "SUPD slip-up" or "PDC dip"). Export CSV for CRM and watch gaps close like magic.
+- **Provider Scorecards** 🏆: Rank by engagement, quality velocity, and panel adherence. Peer benchmarks to fuel those "crushing it!" convos.
 - **PBM Adherence Story** 💊: PDC distributions by class—hunt the low-hanging fruit in the tail for massive ROI.
-- **Evidence Bundle** 🔒: Audit-proof zip with data quality checks, lineage, metrics dictionary, logs, and hashes. Skeptics? Hand 'em this and watch jaws drop!
+- **Evidence Bundle** 🔒: Audit-proof zip with data quality checks, lineage, metrics dictionary, logs, and hashes. Skeptics? Hand this over and watch jaws drop!
 
 ## 🗺️ The Flow (How Value Gets Made – Visual Vibes!) 🔄
 
-Picture this: Raw data zips through a pipeline faster than a caffeinated analyst. Here's the Mermaid magic to impress your tech-savvy execs:
+Picture this: Raw data zips through a pipeline faster than a caffeinated analyst. Here's the Mermaid magic to impress tech-savvy execs:
 
 ```mermaid
 flowchart LR
@@ -33,10 +33,10 @@ Boom—seamless, scalable, and seriously fun! 🚀
 
 ## 📈 Indices & Measures — Transparent, Defensible, and Dazzling! 🌟
 
-We don't hide the math; we flaunt it! Check this pie chart for the Member Engagement Index (MEI)—weights that make sense and drive decisions:
+No hiding the math; flaunt it! Check this pie chart for the Member Engagement Index (MEI)—weights that make sense and drive decisions:
 
 ```mermaid
-pie title Member Engagement Index (MEI) Weights – Your Secret Sauce!
+pie title Member Engagement Index (MEI) Weights – The Secret Sauce!
   "Medication Adherence (PDC)" : 40
   "Preventive Compliance (SUPD, HBD, CBP, Screenings)" : 25
   "Outreach Responsiveness" : 20
@@ -49,20 +49,21 @@ Core Measures (Demo Edition – Exec-Approved Simplicity):
 - **SUPD** 💊: Statin use in DM cohort. Prevention party starts here!
 - **PDC** 📅: Adherent days ÷ window (first fill to year-end), overlap-capped at 0.80 threshold. Adherence? Amped up!
 
-Every formula, weight, and derivation? Zipped in the Evidence Bundle for your auditors' delight. No smoke, just mirrors... of transparency! 😎
+Every formula, weight, and derivation? Zipped in the Evidence Bundle for auditors' delight. No smoke, just mirrors... of transparency! 😎
 
 And for trends? Imagine this bar chart showing PDC lift over time (sample data vibes—run the demo for real sparks!):
 
 ```mermaid
+%%{init: {'theme':'dark', 'themeVariables': { 'barFill': '#ff7f0e', 'secondBarFill': '#2ca02c' }}}%%
 xychart-beta
     title "PDC Adherence Trends - Watch the Wins Stack!"
     x-axis ["Statins", "RASA", "Diabetes Meds"]
     y-axis "Percentage" 0 --> 100
-    bar [75, 82, 68]
-    bar [85, 90, 78]
+    bar "Baseline" [75, 82, 68]
+    bar "Post-Outreach Lift" [85, 90, 78]
 ```
 
-Green bars = growth! Your execs will be charting high-fives. 📊🎉
+Orange bars for baseline, green for growth! Execs will be charting high-fives. 📊🎉
 
 ## 🖥️ What's in the App (Screens That Sizzle!) 💻
 
@@ -92,12 +93,12 @@ Pro tip: Add confetti animations in Streamlit for extra dazzle. 🎊
 
 ## 🔐 Trust, But Verify (The Skeptic Kit – Audit Armor!) 🛡️
 
-We're all about proof in the pudding:
+All about proof in the pudding:
 - **Great Expectations Checks** ✅: Row counts, nulls, ranges, integrity—inputs and outputs locked down.
 - **dbt Docs & Tests** 📜: Lineage that's clickable and credible for governance gurus.
 - **Evidence Bundle (Zip)** 🎁: GE results, metric dictionary, config hash, run logs, artifact checksums. Download and dominate audits!
 
-All powered by Synthea—PHI-free forever. Your compliance officer will sleep like a baby! 😴
+All powered by Synthea—PHI-free forever. Compliance officers will sleep like a baby! 😴
 
 ## ⚡ Quickstart (1 Minute to Magic – No Cape Required!) 🏃‍♂️
 
@@ -115,7 +116,7 @@ streamlit run app/Home.py
 ```
 
 Artifacts explode into `output_demo/`:
-- `measure_member_results.csv`, `measure_contract_rollup.csv` – Your data dynamite!
+- `measure_member_results.csv`, `measure_contract_rollup.csv` – Data dynamite!
 - `outreach_queue.csv`, `provider_scores.csv`, `pdc_distributions.csv` – Actionable awesomeness.
 - `evidence_bundle.zip` ✅ – Auditor's best friend.
 
@@ -125,7 +126,7 @@ Pro hack: Schedule this on cron for daily dazzle. ⏰
 
 Python (pandas for crunch, DuckDB for speed, Plotly for pretty, Streamlit for shine) • dbt-core for modeling mastery • Great Expectations for quality quests • Optional XGBoost for "will-they-engage?" prophecies.
 
-Mix in your real data? Scales to Snowflake or BigQuery like a champ!
+Mix in real data? Scales to Snowflake or BigQuery like a champ!
 
 ## 🛡️ Security & Compliance (Fort Knox Vibes) 🔒
 
@@ -136,6 +137,6 @@ Mix in your real data? Scales to Snowflake or BigQuery like a champ!
 ## 🤝 License & Attribution (Share the Sparkle!) 🌟
 
 MIT License © QMTRY, LLC • Synthea © its awesome creators.  
-Questions? Open an issue, ping us, or let's collab on your next Stars conquest. We thrive on tough puzzles! 🧩
+Questions? Open an issue or ping QMTRY.ai — hard problems are welcome! 🧩
 
 Ready to dazzle? Fork, run, and watch clients line up! 🚀💼

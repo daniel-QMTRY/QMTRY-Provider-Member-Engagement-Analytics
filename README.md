@@ -1,11 +1,8 @@
-# QMTRY-Provider-Member-Engagement-Analytics
-Synthea demo of Stars-ready provider &amp; member engagement analytics with dbt, Great Expectations &amp; Streamlit.
-
 # 🚀 Provider & Member Engagement Analytics — Executive Demo ✨🏥
 
-> 🔥 **Stars in Your Eyes?** Blast off with QMTRY.ai's no-PHI demo that turns Synthea data into actionable gold! Spot Stars gaps, prioritize outreach like a boss, and dazzle auditors with one-click evidence. Execs: In 60 seconds, you'll see revenue lifts, provider MVPs, and adherence wins. Let's make healthcare heroes out of your team! 💪📈
+> 🔥 **Stars in Your Eyes?** Blast off with QMTRY.ai's no-PHI demo that turns Synthea data into actionable gold! Spot Stars gaps, prioritize outreach like a boss, and dazzle auditors with exportable queues, scorecards, and PDC magic. Execs: In 60 seconds, you'll see revenue lifts, provider MVPs, and adherence wins. Let's make healthcare heroes out of your team! 💪📈
 
-Powered by Synthea (100% synthetic, zero PHI drama) • Crafted by QMTRY.ai for payers and providers chasing CMS Stars glory. Export queues, scorecards, and PDC magic—ready to wow your next board meeting!
+Powered by Synthea (100% synthetic, zero PHI drama) • Crafted by QMTRY.ai for payers and providers chasing CMS Stars glory.
 
 ## 🎯 What You'll See at a Glance (Exec Cheat Sheet) 👀
 
@@ -57,11 +54,12 @@ Every formula, weight, and derivation? Zipped in the Evidence Bundle for your au
 And for trends? Imagine this bar chart showing PDC lift over time (sample data vibes—run the demo for real sparks!):
 
 ```mermaid
-bar
-  title PDC Adherence Trends – Watch the Wins Stack!
-  x: ["Statins", "RASA", "Diabetes Meds"]
-  y: [75, 82, 68]  // Baseline %
-  y2: [85, 90, 78] // Post-Outreach Lift %
+xychart-beta
+    title "PDC Adherence Trends - Watch the Wins Stack!"
+    x-axis ["Statins", "RASA", "Diabetes Meds"]
+    y-axis "Percentage" 0 --> 100
+    bar [75, 82, 68]
+    bar [85, 90, 78]
 ```
 
 Green bars = growth! Your execs will be charting high-fives. 📊🎉
